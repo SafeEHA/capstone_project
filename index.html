@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" color-mode="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capstone Project</title>
+
+  <script>
+
+    if (
+      localStorage.getItem("color-mode") === "dark" ||
+      (window.matchMedia("(prefers-color-scheme: dark)").matches &&
+        !localStorage.getItem("color-mode"))
+    ) {
+      document.documentElement.setAttribute("color-mode", "dark");
+    }
+  </script>
+
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <svg style="display: none;">
+    <symbol viewBox="0 0 24 24" id="moon">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </symbol>
+  </svg>
+  <main class="color-mode">
+    <section class="color-mode__section">
+      <header class="color-mode__header">
+        <button class="color-mode__btn light--hidden" aria-label="Toggle light mode">
+          Toggle Light Mode
+          <svg aria-hidden="true">
+            <title>Light Mode</title>
+            <use href="#sun"></use>
+          </svg>
+        </button>
+        <button class="color-mode__btn dark--hidden" aria-label="Toggle dark mode">
+          Toggle Dark Mode
+          <svg aria-hidden="true">
+            <title>Dark Mode</title>
+            <use href="#moon"></use>
+          </svg>
+        </button>
+        <!-- Header content -->
+        <p style="font-family: 'Times New Roman', Times, serif;" class="contact-info">+234-806-979-7607<br>
+          <a href="mailto:eemarabs@gmail.com" target=" _blank">eemarabs@gmail.com</a><br>
+          <a href="https://github.com/" target="_blank"> SafeEHA.github</a>
+        </p>
+
+        <img class="avatar" src="src/avatar.jpg" alt="My avatar" width="30%" />
+
+
+
+        <h1>Hi, My name is Salima Rabiu</h1>
+      </header>
+      <!-- Light Mode Version -->
+      <div class="color-mode__container dark--hidden">
+        <br>
+        <button class="collapsible">
+          <h4>Intro</h4>
+        </button>
+        <div class="content">
+          <p>
+            I am Salima Rabiu, i'm 24, a web developer in training with eHealth Academy and an aspiring frontend
+            developer.
+            My journey into tech has been really exciting and I have learned a lot of things along the way.
+            I am currently working on my first project in the field at the eHealth Academy and I am looking
+            forward to learning more
+            about the industry.
+            I particularly love learning about new ways to tackle problems in web development, trying them out
+            and
+            getting expected results.
+          </p>
+        </div><br>
+
+        <button class="collapsible">
+          <h4>Interests<h4>
+        </button>
+
+        <div class="content">
+          <p>Design<br>
+            Web development<br>
+            Art<br>
+            Reading</p>
+
+        </div><br>
+
+        <button class="collapsible">
+          <h4>Skills<H4>
+        </button>
+
+        <div class="content">
+
+          <img src="https://cdn.svgporn.com/logos/html-5.svg" alt="html-5-photo" width="75" height="75">HTML</img>
+          <img src="https://cdn.svgporn.com/logos/css-3_official.svg" alt="css-3-photo" width="75" height="75">CSS</img>
+          <img src="https://cdn.svgporn.com/logos/javascript.svg" alt="javascript-pic" width="75"
+            height="75">Javascript</img>
+
+
+        </div><br>
+
+        <button class="collapsible">
+          <h4>Education</h4>
+        </button>
+        <div class="content">
+          <p>B.Sc. in Biological Sciences</p>
+          <p>M.Ed Public Health Education (in view)</p>
+          <p>eHA Academy Female cohort</p>
+
+        </div><br>
+        <button class="collapsible">
+          <h4>Experience</h4>
+        </button>
+        <div class="content">
+          <p>
+            I learnt the basics of<b> HTML, Css and Javascript </b>at eHealth Academy<br>
+            I worked on the challenges on the Khan Academy platform<br>
+            I studied the applications of different elements and attributes at W3schools and Sololearn
+          </p>
+        </div><br>
+        <br>
+
+        <button class="collapsible">
+          <h4>Projects</h4>
+        </button>
+        <div class="content">
+          <p>
+            <a href="https://github.com/SafeEHA/EHA-Class" target="_blank">eHA Academy Module Challenges</a>
+          </p>
+        </div><br>
+
+        <button class="collapsible">
+          <h4>Socials</h4>
+        </button>
+        <div class="content">
+          <a href="https://www.linkedin.com/in/salima-rabiu-57b617173/" class="fa fa-linkedin" target="_blank"></a>
+          <a href="https://twitter.com/__blankita" class="fa fa-twitter" target="_blank"></a>
+          <a href="https://instagram.com/everything_sally" class="fa fa-instagram" target="_blank"></a>
+          <a href="https://wa.me/2348069797607" class="fa fa-whatsapp" target="_blank"></a>
+        </div><br>
+
+
+
+      </div>
+      <!-- Dark Mode Version -->
+      <div class="color-mode__container light--hidden">
+        <br>
+        <button class="collapsible">
+          <h4>Intro</h4>
+        </button>
+        <div class="content">
+          <p>
+            I am Salima Rabiu, i'm 24, a web developer in training with eHealth Academy and an aspiring frontend
+            developer.
+            My journey into tech has been really exciting and I have learned a lot of things along the way.
+            I am currently working on my first project in the field at the eHealth Academy and I am looking
+            forward to learning more
+            about the industry.
+            I particularly love learning about new ways to tackle problems in web development, trying them out
+            and
+            getting expected results.
+          </p>
+        </div><br>
+
+        <button class="collapsible">
+          <h4>Interests<h4>
+        </button>
+
+        <div class="content">
+          <p>Design<br>
+            Web development<br>
+            Art<br>
+            Reading</p>
+
+        </div><br>
+
+        <button class="collapsible">
+          <h4>Skills<H4>
+        </button>
+
+        <div class="content">
+
+          <img src="https://cdn.svgporn.com/logos/html-5.svg" alt="html-5-photo" width="75" height="75">HTML</img>
+          <img src="https://cdn.svgporn.com/logos/css-3_official.svg" alt="css-3-photo" width="75" height="75">CSS</img>
+          <img src="https://cdn.svgporn.com/logos/javascript.svg" alt="javascript-pic" width="75"
+            height="75">Javascript</img>
+
+
+        </div><br>
+
+        <button class="collapsible">
+          <h4>Education</h4>
+        </button>
+        <div class="content">
+          <p>B.Sc. in Biological Sciences</p>
+          <p>M.Ed Public Health Education (in view)</p>
+          <p>eHA Academy Female cohort</p>
+
+        </div><br>
+        <button class="collapsible">
+          <h4>Experience</h4>
+        </button>
+        <div class="content">
+          <p>
+            I learnt the basics of<b> HTML, Css and Javascript </b>at eHealth Academy<br>
+            I worked on the challenges on the Khan Academy platform<br>
+            I studied the applications of different elements and attributes at W3schools and Sololearn
+          </p>
+        </div><br>
+        <br>
+
+        <button class="collapsible">
+          <h4>Projects</h4>
+        </button>
+        <div class="content">
+          <p>
+            <a href="https://github.com/SafeEHA/EHA-Class" target="_blank">eHA Academy Module Challenges</a>
+          </p>
+        </div><br>
+
+        <button class="collapsible">
+          <h4>Socials</h4>
+        </button>
+        <div class="content">
+          <a href="https://www.linkedin.com/in/salima-rabiu-57b617173/" class="fa fa-linkedin" target="_blank"></a>
+          <a href="https://twitter.com/__blankita" class="fa fa-twitter" target="_blank"></a>
+          <a href="https://instagram.com/everything_sally" class="fa fa-instagram" target="_blank"></a>
+          <a href="https://wa.me/2348069797607" class="fa fa-whatsapp" target="_blank"></a>
+        </div><br>
+
+        <!-- Collapsible script tag -->
+        <script>
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              }
+            });
+          }
+        </script>
+    </section>
+  </main>
+
+  <!-- back to top -->
+  <div class="myBtn">
+    <button onclick="topFunction()">
+      <img src="src/arrow.jpg" alt="arrow-up" width="50"><br> Back to top
+    </button>
+  </div>
+  <script src="./src/code.js"></script>
+</body>
+
+</html>
